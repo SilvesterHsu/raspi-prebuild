@@ -9,6 +9,7 @@ Here is a list for builted wheels.
 * `torch`
 * `torchvision`
 * `scipy`
+* `sklearn`
 
 
 For more details, follow my Blog [here](https://medium.com/@live459745355/how-do-i-successfully-install-pytorch-numpy-pandas-and-scipy-on-raspberry-pi-4-3b9b0fd739a2)
@@ -27,6 +28,14 @@ The scipy is egg file, use `easy_install` to install it.
 wget https://github.com/SilvesterHsu/raspi-prebuild/tree/master/prebuild/scipy-1.2.3-py3.6-linux-aarch64.egg
 easy_install *.egg
 ```
+### Notice
+**sklearn:**
+
+Before start to use sklearn, run the code below:
+```
+sudo apt-get install libopenblas-dev
+```
+
 ## Docker
 I also offer the Docker file to build images. For newly installed raspberry pi system (ubuntu 64-bit kernel), you can directly build docker images.
 ```Docker
